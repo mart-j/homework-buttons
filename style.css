@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+/*************LAYOUT STYLING******************/
+.container__first-row{
+    display: flex;
+}
+
+.first-row__left-side, .first-row__right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 167px;
+    background-color: #EEEEEE;
+}
+
+.first-row__right-side {
+    background-color: #303030;
+}
+
+
+
+.container__second-row {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+}
+
+.second-row__left-side {
+    color: rgba(0, 0, 0, 0.537591);
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 485px;
+    background-color: #eee;
+    justify-content: space-evenly;
+}
+
+
+.second-row__right-side {
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 485px;
+    background-color: #303030;
+}
+
+
+
+
+.left-side__left-column, .right-side__left-column, .left-side__right-column, .right-side__right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+/*************BUTTON STYLING******************/
+.add-button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #009688;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 8px 8px rgba(0, 0, 0, 0.24);
+}
+
+.add-button--raised {
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.12), 0px 14px 14px rgba(0, 0, 0, 0.237602);
+}
+
+.add-button__plus-sign {
+    fill: #fff;
+}
+
+.add-button--secondary {
+    background-color: #80CBC4;
+}
+
+
+
+.button{
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding: 10px 16.5px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #009688;
+    border-radius: 2px;
+}
+
+.button-primary--normal {
+    color: #009688;
+    background: none;
+
+}
+
+
+
+.button-primary--pressed {
+    color: #009688;
+    background: linear-gradient(0deg, rgba(153, 153, 153, 0.2), rgba(153, 153, 153, 0.2));
+}
+
+.button-primary--disabled {
+
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.38);
+   
+}
+
+
+
+.button-primary--raised--normal {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+
+}
+
+.button-primary--raised--pressed {
+    background: linear-gradient(0deg, rgba(189, 189, 189, 0.3), rgba(189, 189, 189, 0.3)), #009688;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 8px 8px rgba(0, 0, 0, 0.24);
+}
+
+.button-primary--raised--disabled {
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.38);
+    padding: 10px 16.5px;
+    background: linear-gradient(0deg, rgba(79, 79, 79, 0.26), rgba(79, 79, 79, 0.26));
+    
+    
+}
+
+.button-secondary--normal {
+    color: #80CBC4;
+    background: none;
+
+}
+
+.button-secondary--pressed {
+    color: #80CBC4;
+    background: linear-gradient(0deg, rgba(153, 153, 153, 0.2), rgba(153, 153, 153, 0.2));
+}
+
+
+.button-secondary--disabled {
+    cursor: not-allowed;
+    background: none;
+    color: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 0;
+}
+
+.button-secondary--raised {
+    color: rgba(0, 0, 0, 0.871943);
+    background: linear-gradient(0deg, #92CBC5, #92CBC5), #009688;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+ ;
+}
+
+.button-secondary--raised--pressed {
+    color: rgba(0, 0, 0, 0.871943);
+    background: linear-gradient(0deg, #92CBC5, #92CBC5), #009688;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 8px 8px rgba(0, 0, 0, 0.24);
+ ;
+}
+
+.button-secondary--raised--disabled {
+    cursor: not-allowed;
+    color: rgba(255, 255, 255, 0.3);
+    background: linear-gradient(0deg, rgba(204, 204, 204, 0.12), rgba(204, 204, 204, 0.12));
+
+}
