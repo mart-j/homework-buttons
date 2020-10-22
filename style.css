@@ -15,7 +15,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     width: 50%;
-    height: 167px;
+    
     background-color: #EEEEEE;
 }
 
@@ -31,12 +31,11 @@ body {
     display: flex;
 }
 
-.second-row__left-side {
+.second-row__left-side, .second-row__right-side {
     color: rgba(0, 0, 0, 0.537591);
     display: flex;
     justify-content: center;
     width: 50%;
-    height: 485px;
     background-color: #eee;
     justify-content: space-evenly;
 }
@@ -44,11 +43,7 @@ body {
 
 .second-row__right-side {
     color: rgba(255, 255, 255, 0.7);
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    width: 50%;
-    height: 485px;
+
     background-color: #303030;
 }
 
@@ -63,7 +58,16 @@ body {
 
 
 /*************BUTTON STYLING******************/
+
+.description {
+    margin: 30px;
+}
+
+
+
+
 .add-button {
+    margin: 30px 0;
     cursor: pointer;
     outline: none;
     border: none;
@@ -81,8 +85,14 @@ body {
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.12), 0px 14px 14px rgba(0, 0, 0, 0.237602);
 }
 
-.add-button__plus-sign {
+.add-button__plus-sign, .add-button__plus-sign--secondary {
+    padding-top: 2px;
+    transform: scale(1.6);
     fill: #fff;
+}
+
+.add-button__plus-sign--secondary {
+    transform: scale(1.6);
 }
 
 .add-button--secondary {
@@ -100,6 +110,7 @@ body {
     cursor: pointer;
     background-color: #009688;
     border-radius: 2px;
+    margin: 30px 0;
 }
 
 .button-primary--normal {
